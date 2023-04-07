@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="mod.master.cs" Inherits="WebApplication3.Modarator.mod" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>BilgiYarismasi Mod panel</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="mod.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="main-title">
+                <asp:Image ID="Image1" runat="server" Height="200px"  Width="100%" ImageUrl="~/Pictures/menu1.png" />
+            </div>
+            <!-- Başlık kısmı-->
+            <div class="main-content">
+                
+                <div class="content">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                </div><!-- Sol kısım içerik kısmı-->
+                
+                <div class="sidebar">
+                    <table style="text-align:center; margin: 0px auto;">
+                        <tr>
+                            <td>
+                                <asp:Button ID="Button1" style="display:block; width: 100%; padding: 5px; margin: 20px 0px; border-radius: 20px;" runat="server" Text="Anasayfa" OnClick="HomeClick" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <asp:Button ID="Button2" style="display:block; width: 100%; padding: 5px; margin: 20px 0px; border-radius: 20px;" runat="server" Text="Soru ekle" OnClick="QuestionAddClick" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <asp:Button ID="Button4" style="display:block; width: 100%; padding: 5px; margin: 20px 0px; border-radius: 20px;" runat="server" Text="Excelden soru ekle" OnClick="ExcelClick" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <asp:Button ID="Button3" style="display:block; width: 100%; padding: 5px; margin: 20px 0px; border-radius: 20px;" runat="server" Text="Soruları düzenle ve sil" OnClick="QuestionClick" />
+                            </td>
+                        </tr>
+                    </table>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+                </div><!-- Sağ kısım menü kısmı-->
+
+            </div>
+        </div>
+
+    </form>
+</body>
+</html>

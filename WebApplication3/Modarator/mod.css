@@ -1,0 +1,263 @@
+﻿/* Genel Stil Ayarları */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../Pictures/icerik.png');
+    background-repeat: repeat;
+}
+
+/* Header Ayarları */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+/* Ana başlık ayarları*/
+.main-title {
+    width: 100%;
+    height: 200px;
+}
+/* Ana İçerik Ayarları */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Sağ Taraftaki Menü Ayarları */
+.sidebar {
+    width: 15%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+.sidebar h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Sol Taraftaki İçerik Ayarları */
+.content {
+    width: 80%;
+}
+
+.content h2 {
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Footer Ayarları */
+footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Daha modern bir görünüm için */
+input[type="text"],
+input[type="password"],
+textarea {
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.2s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px #007bff;
+}
+
+
+/* Genel Stil Ayarları */
+/*body {
+    background-color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+}*/
+
+/* Ana Çerçeve Ayarları */
+/*.cerceve {
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+}*/
+
+/* Kafa Bölümü Ayarları */
+/*.cerceve.kafa {
+    width: 100%;
+    height: 100px;
+    background-color: saddlebrown;
+    float: left;
+}*/
+
+/* Gövde Bölümü Ayarları */
+/*.cerceve.govde {
+    width: 100%;
+    height: auto;
+    float: left;
+}*/
+
+/* Sol Taraf Ayarları */
+/*.cerceve.govde .govdesol {
+    width: 25%;
+    height: auto;
+    border: 1px solid #87ceeb;
+    float: left;
+    margin: 0 5px;
+}*/
+
+/* Sağ Taraf Ayarları */
+/*.cerceve.govde .govdesag {
+    width: 70%;
+    height: auto;
+    border: 1px solid #87ceeb;
+    float: right;
+    margin: 0 5px;
+}*/
+
+
+/* Genel Stil Ayarları */
+/*body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}*/
+
+/* Header Ayarları */
+/*header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}*/
+
+/* Ana İçerik Ayarları */
+/*.main-content {
+    display: flex;
+    flex-wrap: wrap;
+}*/
+
+/* Sol Taraftaki Menü Ayarları */
+/*.sidebar {
+    width: 20%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    color: #007bff;
+    text-decoration: none;
+}*/
+
+/* Sağ Taraftaki İçerik Ayarları */
+/*.content {
+    width: 80%;
+    padding: 20px;
+}
+
+.content h2 {
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.5;
+}*/
+
+/* Footer Ayarları */
+/*footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}*/
