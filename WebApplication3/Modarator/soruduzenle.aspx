@@ -9,11 +9,13 @@
         <asp:ListItem Value="3">Duzey</asp:ListItem>
         <asp:ListItem Value="4">Soru metni</asp:ListItem>
         <asp:ListItem Value="5">Doğru cevap</asp:ListItem>
-        <asp:ListItem Value="6">Yanlis cevap</asp:ListItem>
-        <asp:ListItem Value="7">Tip</asp:ListItem>
+        <asp:ListItem Value="6">Birinci yanlis cevap</asp:ListItem>
+        <asp:ListItem Value="7">İkinci yanlis cevap</asp:ListItem>
+        <asp:ListItem Value="8">Üçüncü yanlis cevap</asp:ListItem>
+        <asp:ListItem Value="9">Tip</asp:ListItem>
     </asp:DropDownList>
-    <input id="AranacakMetin" type="text" style="display:inline-block; width: 60%; padding: 5px; margin: 20px 20px; border-radius: 20px;" />
-    <asp:Button ID="ButonFiltrele" runat="server" style="display:inline-block; width: 150px; padding: 5px; margin: 20px 20px; border-radius: 20px;" Text="Ara" />
+    <asp:TextBox ID="AranacakMetin" type="text" style="display:inline-block; width: 60%; padding: 5px; margin: 20px 20px; border-radius: 20px;" runat="server"></asp:TextBox>
+    <asp:Button ID="ButonFiltrele" runat="server" style="display:inline-block; width: 150px; padding: 5px; margin: 20px 20px; border-radius: 20px;" Text="Ara" OnClick="tolist" />
     &nbsp;<asp:ListView ID="ListView1" runat="server" style="height: 600px" DataKeyNames="Id" DataSourceID="DatabaseQuestion">
         <AlternatingItemTemplate>
             <tr style="background-color:#FFF8DC;">

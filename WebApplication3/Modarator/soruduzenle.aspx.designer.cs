@@ -24,6 +24,15 @@ namespace WebApplication3.Modarator
         protected global::System.Web.UI.WebControls.DropDownList FiltreSecin;
 
         /// <summary>
+        /// AranacakMetin denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik üretilmiş alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox AranacakMetin;
+
+        /// <summary>
         /// ButonFiltrele denetimi.
         /// </summary>
         /// <remarks>

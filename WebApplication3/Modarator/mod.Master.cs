@@ -27,7 +27,7 @@ namespace WebApplication3.Modarator
         }
         protected void QuestionClick(object sender, EventArgs e)
         {
-            Response.Redirect("panel.aspx");
+            Response.Redirect("soruduzenle.aspx");
         }
         
 

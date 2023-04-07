@@ -12,12 +12,6 @@ namespace WebApplication3.Modarator
         SqlBaglanti database = new SqlBaglanti();
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(!IsPostBack)
-            {
-                DatabaseQuestion.ConnectionString = "Data Source=JEXZA;Initial Catalog=Yarisma;Integrated Security=True";
-                DatabaseQuestion.ProviderName = "System.Data.SqlClient";
-                DatabaseQuestion.SelectCommand = "SELECT * FROM [Question]";
-            }
         }
 
         private string columnselect()
@@ -45,13 +39,26 @@ namespace WebApplication3.Modarator
                     columsql = "[FReply1],[FReply2],[FReply3]";
                     break;
                 case 7:
+                    columsql = "[FReply2]";
+                    break;
+                case 8:
+                    columsql = "[FReply3]";
+                    break;
+                case 9:
                     columsql = "[Type]";
                     break;
                 default:
-                    columsql = "*";
+                    columsql = "[Question]";
                     break;
             }
             return columsql;
+        }
+        protected void tolist(object sender, EventArgs e)
+        {
+            columnselect();
+            DatabaseQuestion.ConnectionString = "Data Source=JEXZA;Initial Catalog=Yarisma;Integrated Security=True";
+            DatabaseQuestion.ProviderName = "System.Data.SqlClient";
+            DatabaseQuestion.SelectCommand = "SELECT * FROM [Question] WHERE " + columnselect() + " LIKE '%" + AranacakMetin.Text + "%'";
         }
     }
 }
